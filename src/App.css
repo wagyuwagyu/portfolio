@@ -151,6 +151,21 @@ section { scroll-margin-top: 90px; }
 }
 .link:hover { filter: brightness(1.05); }
 
+.skillsSection {
+  position: relative;
+  isolation: isolate;
+}
+
+.skillsSection::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(700px 420px at 18% 45%, rgba(106, 166, 255, 0.10), transparent 60%);
+}
+
 /* =========================
    NAV
 ========================= */

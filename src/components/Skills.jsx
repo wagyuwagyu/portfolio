@@ -20,7 +20,7 @@ const SKILLS = [
 
 export default function Skills() {
   return (
-    <section id="skills" className="section section--tight">
+    <section id="skills" className="section skillsSection">
       <div className="container">
         <div className="sectionHead">
           <div className="kicker">SKILLS</div>
