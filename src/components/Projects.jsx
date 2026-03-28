@@ -71,7 +71,7 @@ export default function Projects() {
 
           <StaggerItem y={10}>
             <p className="muted">
-              Three things I’ve built that show how I think: automate, model, ship.
+               Things I've built that I am passionate about:
             </p>
           </StaggerItem>
 
