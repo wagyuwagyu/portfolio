@@ -1,68 +1,83 @@
+import { FiMail, FiLinkedin, FiGithub, FiMapPin } from "react-icons/fi";
+
 export default function Contact() {
+  const email = "yii@uwaterloo.ca";
+  const linkedin = "https://www.linkedin.com/in/yuto-ii";
+  const github = "https://github.com/wagyuwagyu";
+  const location = "Waterloo, ON";
+
+  const copyEmail = async () => {
+    try {
+      await navigator.clipboard.writeText(email);
+    } catch (err) {
+      console.error("Failed to copy email:", err);
+    }
+  };
+
   return (
     <section id="contact" className="section">
       <div className="container">
         <h2 className="h2">Contact</h2>
         <p className="muted contactIntro">
-          If you're reaching out about a role, project, or collaboration —
-          email is best.
+          If you’re reaching out about a role, project, or collaboration, email is best.
         </p>
 
-        <div className="contactGrid">
-          {/* LEFT CARD */}
-          <div className="card contactCard">
-            <h3 className="card__title">Get in touch</h3>
+        <div className="contactPixelGrid">
+          <a href={`mailto:${email}`} className="card contactPixelCard">
+            <div className="contactPixelIcon">
+              <FiMail />
+            </div>
+            <div className="contactPixelText">
+              <span className="contactPixelLabel">Email</span>
+              <span className="contactPixelValue">{email}</span>
+            </div>
+          </a>
 
-            <a
-              href="mailto:yii@uwaterloo.ca"
-              className="contactEmail"
-            >
-              yii@uwaterloo.ca
-            </a>
+          <a
+            href={linkedin}
+            target="_blank"
+            rel="noreferrer"
+            className="card contactPixelCard"
+          >
+            <div className="contactPixelIcon">
+              <FiLinkedin />
+            </div>
+            <div className="contactPixelText">
+              <span className="contactPixelLabel">LinkedIn</span>
+              <span className="contactPixelValue">Connect</span>
+            </div>
+          </a>
 
-            <div className="contactActions">
-              <button
-                className="btn btn--ghost"
-                onClick={() =>
-                  navigator.clipboard.writeText("yii@uwaterloo.ca")
-                }
-              >
-                Copy email
-              </button>
+          <a
+            href={github}
+            target="_blank"
+            rel="noreferrer"
+            className="card contactPixelCard"
+          >
+            <div className="contactPixelIcon">
+              <FiGithub />
+            </div>
+            <div className="contactPixelText">
+              <span className="contactPixelLabel">GitHub</span>
+              <span className="contactPixelValue">wagyuwagyu</span>
+            </div>
+          </a>
 
-              <a
-                href="https://www.linkedin.com/in/yuto-ii"
-                target="_blank"
-                rel="noreferrer"
-                className="btn"
-              >
-                LinkedIn
-              </a>
+          <div className="card contactPixelCard contactPixelCard--static">
+            <div className="contactPixelIcon">
+              <FiMapPin />
+            </div>
+            <div className="contactPixelText">
+              <span className="contactPixelLabel">Location</span>
+              <span className="contactPixelValue">{location}</span>
             </div>
           </div>
+        </div>
 
-          {/* RIGHT CARD */}
-          <div className="card contactCard">
-            <h3 className="card__title">Quick message</h3>
-
-            <form className="contactForm">
-              <input
-                type="text"
-                placeholder="Your name"
-                className="contactInput"
-              />
-
-              <textarea
-                placeholder="Say hi..."
-                className="contactTextarea"
-                rows="4"
-              />
-
-              <button type="button" className="btn">
-                Send
-              </button>
-            </form>
-          </div>
+        <div className="contactExtraActions">
+          <button className="btn btn--ghost" onClick={copyEmail}>
+            Copy email
+          </button>
         </div>
       </div>
     </section>
