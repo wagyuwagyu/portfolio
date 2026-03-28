@@ -73,13 +73,6 @@ export default function Contact() {
             </div>
           </div>
         </div>
-
-        <div className="contactExtraActions">
-          <button className="btn btn--ghost" onClick={copyEmail}>
-            Copy email
-          </button>
-        </div>
-      </div>
     </section>
   );
 }
