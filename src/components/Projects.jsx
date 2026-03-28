@@ -68,19 +68,6 @@ function ProjectCard({ p }) {
             </span>
           ))}
         </div>
-
-        {p.github && (
-          <div className="projectRow__actions">
-            <a
-              href={p.github}
-              target="_blank"
-              rel="noreferrer"
-              className="btn btn--ghost"
-            >
-              View GitHub
-            </a>
-          </div>
-        )}
       </div>
     </article>
   );
