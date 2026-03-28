@@ -1,5 +1,5 @@
 
-import gamingImg from "../assets/gaming.jpg";
+import gamingImg from "../assets/gaming.JPG";
 
 export default function About() {
   return (
