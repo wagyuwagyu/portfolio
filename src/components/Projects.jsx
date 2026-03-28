@@ -1,9 +1,18 @@
 import seatingImg from "../assets/seating.png";
 import eeImg from "../assets/ee-gametheory.png";
 import quizImg from "../assets/quiz.png";
+import valorantImg from "../assets/valorant-ml.png"; 
 import { StaggerGroup, StaggerItem } from "./Reveal"; // <-- adjust path
 
 const PROJECTS = [
+  {
+    title: "Valorant Match Outcome Prediction",
+    desc:
+      "Machine learning project that predicts professional Valorant match outcomes using player performance statistics. Built a full pipeline for data cleaning, preprocessing, Random Forest classification, model evaluation, K-Means clustering, and PCA-based visualization to analyze player performance patterns.",
+    tech: ["Python", "Pandas", "NumPy", "Scikit-learn", "Matplotlib", "Jupyter"],
+    img: valorantImg,
+    github: "https://github.com/wagyuwagyu/valorant-ml-project",
+  },
   {
     title: "Automated Exam Seating Chart Generator",
     desc:
