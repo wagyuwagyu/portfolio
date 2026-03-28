@@ -1137,3 +1137,91 @@ body,
   opacity: 1;
   transform: translateY(-1px);
 }
+
+.aboutSplit {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+/* LEFT SIDE */
+
+.aboutKicker {
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.aboutTitle {
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+
+.aboutText {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  max-width: 520px;
+  margin-bottom: 1rem;
+}
+
+/* RIGHT SIDE */
+
+.aboutVisual {
+  position: relative;
+  height: 320px;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: radial-gradient(circle at center, rgba(255,255,255,0.04), transparent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* core circle */
+.aboutCore {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+}
+
+/* floating elements */
+.aboutFloating {
+  position: absolute;
+  font-size: 1.4rem;
+  opacity: 0.6;
+}
+
+.aboutFloating--code {
+  top: 20%;
+  left: 25%;
+}
+
+.aboutFloating--bolt {
+  top: 25%;
+  right: 20%;
+}
+
+.aboutFloating--nodes {
+  bottom: 20%;
+  right: 30%;
+}
+
+/* mobile */
+@media (max-width: 900px) {
+  .aboutSplit {
+    grid-template-columns: 1fr;
+  }
+
+  .aboutVisual {
+    height: 260px;
+  }
+}

@@ -15,41 +15,39 @@ function Feature({ icon, title, children }) {
 export default function About() {
   return (
     <section id="about" className="section section--tight">
-      <div className="container">
-        <div className="sectionHead">
-          <div className="kicker">ABOUT</div>
-          <h2 className="h2 h2--big">How I build</h2>
-          <p className="lead">
-            Waterloo Math student who likes building practical tools and systems — automation,
-            clean workflows, and shipping things that save time.
+      <div className="container aboutSplit">
+        
+        {/* LEFT */}
+        <div className="aboutLeft">
+          <div className="aboutKicker">01. ABOUT</div>
+
+          <h2 className="aboutTitle">
+            Make it better.
+          </h2>
+
+          <p className="aboutText">
+            I’m a Waterloo math student.
+            I like building things that are actually useful — especially tools that automate work or clean up messy workflows.
           </p>
-          <div className="sectionRule" />
+
+          <p className="aboutText muted">
+            I’d rather take time to understand something properly than rush through it.
+          </p>
         </div>
 
-        <div className="grid2 grid2--features">
-          <Feature icon={<FiZap />} title="What I do">
-            I build clean workflows and tools, especially when something is repetitive or messy and needs structure.
-          </Feature>
+        {/* RIGHT */}
+        <div className="aboutRight">
+          <div className="aboutVisual">
+            <div className="aboutCore">
+              <span>CORE</span>
+            </div>
 
-          <Feature icon={<FiRepeat />} title="How I work">
-            Small iterations, fast feedback, clean execution. Build → test → tighten.
-          </Feature>
+            <div className="aboutFloating aboutFloating--code">{"</>"}</div>
+            <div className="aboutFloating aboutFloating--bolt">⚡</div>
+            <div className="aboutFloating aboutFloating--nodes">⛓</div>
+          </div>
         </div>
 
-        <div className="miniHighlights">
-          <div className="miniItem">
-            <FiCheckCircle className="miniIcon" />
-            <span>Automation + Data workflows</span>
-          </div>
-          <div className="miniItem">
-            <FiCheckCircle className="miniIcon" />
-            <span>Readable systems & clean UI</span>
-          </div>
-          <div className="miniItem">
-            <FiCheckCircle className="miniIcon" />
-            <span>Ship fast, then refine</span>
-          </div>
-        </div>
       </div>
     </section>
   );
