@@ -6,14 +6,6 @@ export default function Contact() {
   const github = "https://github.com/wagyuwagyu";
   const location = "Waterloo, ON";
 
-  const copyEmail = async () => {
-    try {
-      await navigator.clipboard.writeText(email);
-    } catch (err) {
-      console.error("Failed to copy email:", err);
-    }
-  };
-
   return (
     <section id="contact" className="section">
       <div className="container">
@@ -73,6 +65,7 @@ export default function Contact() {
             </div>
           </div>
         </div>
+      </div>
     </section>
   );
 }
