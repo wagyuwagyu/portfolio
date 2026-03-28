@@ -44,7 +44,21 @@ function ProjectCard({ p }) {
       </div>
 
       <div className="projectRow__body">
-        <h3 className="card__title">{p.title}</h3>
+        <div className="projectRow__titleWrap">
+          <h3 className="card__title">{p.title}</h3>
+
+          {p.github && (
+            <a
+              href={p.github}
+              target="_blank"
+              rel="noreferrer"
+              className="projectRow__githubLink"
+            >
+              GitHub
+            </a>
+          )}
+        </div>
+
         <p className="muted">{p.desc}</p>
 
         <div className="chips chips--tight">
