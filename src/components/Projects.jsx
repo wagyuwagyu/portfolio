@@ -40,7 +40,7 @@ function ProjectCard({ p }) {
   return (
     <article className="card card--hover projectRow">
       <div className="projectRow__media">
-        <img className="projectRow__img" src={p.img} alt="" loading="lazy" />
+        <img className="projectRow__img" src={p.img} alt={p.title} loading="lazy" />
       </div>
 
       <div className="projectRow__body">
@@ -54,6 +54,19 @@ function ProjectCard({ p }) {
             </span>
           ))}
         </div>
+
+        {p.github && (
+          <div className="projectRow__actions">
+            <a
+              href={p.github}
+              target="_blank"
+              rel="noreferrer"
+              className="btn btn--ghost"
+            >
+              View GitHub
+            </a>
+          </div>
+        )}
       </div>
     </article>
   );
