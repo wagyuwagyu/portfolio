@@ -20,8 +20,7 @@ export default function Hero() {
         </h1>
 
         <p className="heroSub">
-          Waterloo Math student building practical tools, automation systems,
-          and clean workflows that ship.
+          1st Year Math Honours Co-op @ University of Waterloo
         </p>
 
         <div className="heroCTA">
