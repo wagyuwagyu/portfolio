@@ -11,15 +11,11 @@ export default function About() {
           <h2 className="h2 h2--big aboutTitle">Make it better</h2>
 
           <p className="aboutText">
-            I’m a Waterloo math student and a gamer at heart. I like building
-            things I’d actually use — tools, systems, or anything that makes
-            something feel smoother or more enjoyable.
+           "On my business card, I am a corporate president. 
+           In my mind, I am a game developer. 
+           But in my heart, I am a gamer." - Satoru Iwata, 4th President of Nintendo
           </p>
 
-          <p className="aboutText muted">
-            Most of what I build starts from “this is annoying” and turns into
-            “this should exist.”
-          </p>
         </div>
 
         <div className="aboutRight">
