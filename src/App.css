@@ -1343,3 +1343,8 @@ body,
     max-height: 420px;
   }
 }
+
+.quoteAuthor {
+  display: inline-block;
+  margin-top: 0.5rem;
+}

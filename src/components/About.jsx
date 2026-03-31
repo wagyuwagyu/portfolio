@@ -11,10 +11,10 @@ export default function About() {
           <h2 className="h2 h2--big aboutTitle">Gamer at Heart</h2>
 
           <p className="aboutText">
-           "On my business card, I am a corporate president. 
-           In my mind, I am a game developer. 
-           But in my heart, I am a gamer." 
-           - Satoru Iwata, 4th President of Nintendo
+            “On my business card, I am a corporate president.<br />
+            In my mind, I am a game developer.<br />
+            But in my heart, <strong>I am a gamer</strong>.”<br />
+            <span className="quoteAuthor">- Satoru Iwata, 4th President of Nintendo</span>
           </p>
 
         </div>
