@@ -9,7 +9,7 @@ const SKILLS = [
   {
     icon: <FiCode />,
     title: "Libraries / Frameworks",
-    items: ["Pandas", "NumPy", "Tkinter", "SQLite", "Pygame", "Scikit-learn", "Matplotlib"],
+    items: ["Pandas", "NumPy", "Tkinter", "MySQL", "Pygame", "Scikit-learn", "Matplotlib"],
   },
   {
     icon: <FiTool />,

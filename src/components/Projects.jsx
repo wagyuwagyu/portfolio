@@ -16,8 +16,8 @@ const PROJECTS = [
   {
     title: "Automated Exam Seating Chart Generator",
     desc:
-      "Python application that automatically generates optimized exam seating charts from raw student CSV data, reducing an 8+ hour manual scheduling process to minutes. Designed and implemented constraint handling for spacing rules, room capacities, and subject grouping. Built with SQLite-backed storage and dynamic filtering to allow administrators to adjust layouts instantly.",
-    tech: ["Python", "SQLite", "Tkinter", "Pandas"],
+      "Python application that automatically generates optimized exam seating charts from raw student CSV data, reducing an 8+ hour manual scheduling process to minutes. Designed and implemented constraint handling for spacing rules, room capacities, and subject grouping. Built with MySQL-backed storage and dynamic filtering to allow administrators to adjust layouts instantly.",
+    tech: ["Python", "MySQL", "Tkinter", "Pandas"],
     img: seatingImg,
   },
   {
