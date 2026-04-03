@@ -21,7 +21,6 @@ const PROJECTS = [
     tech: ["Python", "SQLite", "Tkinter", "Pandas"],
     img: seatingImg,
     github: "https://github.com/wagyuwagyu/auto-seating-chart",
-    pdf: "/auto-seating-chart.pdf",
   },
   {
     title: "Mathematics Game Theory Research Paper",
@@ -40,12 +39,13 @@ const PROJECTS = [
     pdf: "/badminton-modeling-paper.pdf",
   },
   {
-    title: "Educational Quiz Game",
-    desc:
-      "2D quiz application developed in Unity using modular C# architecture. Implemented state-driven quiz flow, reusable UI components, score tracking, and feedback animations. Iteratively refined gameplay through testing cycles to improve responsiveness, clarity, and user engagement.",
-    tech: ["C#", "Unity"],
-    img: quizImg,
-  },
+  title: "Educational Quiz Game",
+  desc:
+    "2D quiz application developed in Unity using modular C# architecture. Implemented state-driven quiz flow, reusable UI components, score tracking, and feedback animations. Iteratively refined gameplay through testing cycles to improve responsiveness, clarity, and user engagement.",
+  tech: ["C#", "Unity"],
+  img: quizImg,
+  link: "https://wagyu.itch.io/quizrizzler",
+ },
 ];
 
 function ProjectCard({ p }) {
@@ -81,8 +81,19 @@ function ProjectCard({ p }) {
                 PDF
               </a>
             )}
+
+            {p.link && (
+              <a
+                href={p.link}
+                target="_blank"
+                rel="noreferrer"
+                className="projectRow__githubLink"
+              >
+                Link
+              </a>
+            )}
           </div>
-        </div>
+          </div>
 
         <p className="muted">{p.desc}</p>
 
