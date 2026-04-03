@@ -10,10 +10,6 @@ export default function Contact() {
     <section id="contact" className="section">
       <div className="container">
         <h2 className="h2">Contact</h2>
-        <p className="muted contactIntro">
-          If you’re reaching out about a role, project, or collaboration, email is best.
-        </p>
-
         <div className="contactPixelGrid">
           <a href={`mailto:${email}`} className="card contactPixelCard">
             <div className="contactPixelIcon">
