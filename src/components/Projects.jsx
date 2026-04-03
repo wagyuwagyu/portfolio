@@ -2,7 +2,7 @@ import seatingImg from "../assets/seating.png";
 import eeImg from "../assets/ee-gametheory.png";
 import quizImg from "../assets/quiz.png";
 import valorantImg from "../assets/valorant-ml.png";
-import iaImg from "../assets/iaImg.png";
+import iaImg from "../assets/badminton.png";
 import { StaggerGroup, StaggerItem } from "./Reveal";
 
 const PROJECTS = [
