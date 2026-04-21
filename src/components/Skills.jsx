@@ -1,4 +1,4 @@
-import { FiCode, FiDatabase, FiTool } from "react-icons/fi";
+import { FiCode, FiDatabase, FiTool, FiUsers } from "react-icons/fi";
 
 const SKILLS = [
   {
@@ -9,12 +9,31 @@ const SKILLS = [
   {
     icon: <FiCode />,
     title: "Libraries / Frameworks",
-    items: ["Pandas", "NumPy", "Tkinter", "SQLite", "Pygame", "Scikit-learn", "Matplotlib"],
+    items: [
+      "Pandas",
+      "NumPy",
+      "Tkinter",
+      "SQLite",
+      "Pygame",
+      "Scikit-learn",
+      "Matplotlib",
+    ],
   },
   {
     icon: <FiTool />,
     title: "Developer Tools",
     items: ["VS Code", "Anaconda", "Spyder", "PyCharm", "Unity"],
+  },
+  {
+    icon: <FiUsers />,
+    title: "Soft Skills",
+    items: [
+      "Adaptability",
+      "Leadership",
+      "Teamwork",
+      "Metacognition",
+      "Problem Solving",
+    ],
   },
 ];
 
